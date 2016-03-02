@@ -61,18 +61,19 @@
     <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
   </platform>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
+  
+  <gap:plugin name="de.appplant.cordova.plugin.email-composer"/>
+  <gap:plugin name="nl.x-services.plugins.socialsharing" />
+  <gap:plugin name="org.apache.cordova.device"  />
+  <gap:plugin name="org.apache.cordova.dialogs"  />
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
+  
   <plugin name="cordova-plugin-console" spec="^1.0.1"/>
-  <plugin name="cordova-plugin-device" spec="^1.0.1"/>
-  <plugin name="cordova-plugin-dialogs" spec="^1.1.1"/>
   <plugin name="cordova-plugin-globalization" spec="^1.0.1"/>
   <plugin name="cordova-plugin-extension" spec="^1.1.4"/>
-  <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
-  <plugin name="cordova-plugin-inappbrowser" spec="^1.0.1"/>
   <plugin name="com.rjfun.cordova.iad" spec="^2.0.4"/>
   <plugin name="cordova-plugin-admobpro" spec="^2.8.3"/>
   <plugin name="cordova-plugin-whitelist" spec="^1.0.0"/>
-  <plugin name="de.appplant.cordova.plugin.email-composer" spec="https://github.com/katzer/cordova-plugin-email-composer.git"/>
-  <plugin name="org.pushandplay.cordova.apprate" spec="^1.1.7"/>
   <plugin name="com.ionic.keyboard" spec="https://github.com/driftyco/ionic-plugins-keyboard.git"/>
   <plugin name="cordova-plugin-splashscreen" spec="^2.1.0"/>
 </widget>
