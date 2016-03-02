@@ -74,6 +74,6 @@
   <plugin name="com.rjfun.cordova.iad" spec="^2.0.4"/>
   <plugin name="cordova-plugin-admobpro" spec="^2.8.3"/>
   <plugin name="cordova-plugin-whitelist" spec="^1.0.0"/>
-  <plugin name="com.ionic.keyboard" spec="https://github.com/driftyco/ionic-plugins-keyboard.git"/>
+  <!--<plugin name="com.ionic.keyboard" spec="https://github.com/driftyco/ionic-plugins-keyboard.git"/>-->
   <plugin name="cordova-plugin-splashscreen" spec="^2.1.0"/>
 </widget>
