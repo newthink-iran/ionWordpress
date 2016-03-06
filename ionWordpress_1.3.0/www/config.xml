@@ -71,7 +71,6 @@
   <plugin name="cordova-plugin-globalization"/>
   <plugin name="com.rjfun.cordova.iad"/>
   <plugin name="cordova-plugin-whitelist"/>
-  <plugin name="org.pushandplay.cordova.apprate"/>
   <plugin name="cordova-plugin-splashscreen"/>
   <!--
   <plugin name="cordova-plugin-console" spec="^1.0.1"/>
