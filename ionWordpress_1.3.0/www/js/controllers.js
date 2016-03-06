@@ -1,4 +1,4 @@
-angular.module('your_app_name.controllers', [])
+angular.module('radioogle.controllers', [])
 
 // APP - RIGHT MENU
 .controller('AppCtrl', function($scope, AuthService) {
