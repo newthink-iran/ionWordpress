@@ -91,16 +91,16 @@ angular.module('your_app_name', [
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-  .state('walkthrough', {
+  /*.state('walkthrough', {
     url: "/",
     templateUrl: "views/auth/walkthrough.html",
     controller: 'WalkthroughCtrl',
     data: {
       authenticate: false
     }
-  })
+  })*/
 
-  .state('register', {
+  /*.state('register', {
     url: "/register",
     templateUrl: "views/auth/register.html",
     controller: 'RegisterCtrl',
@@ -125,7 +125,7 @@ angular.module('your_app_name', [
     data: {
       authenticate: false
     }
-  })
+  })*/
 
   .state('app', {
     url: "/app",
