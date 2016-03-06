@@ -42,7 +42,7 @@ angular.module('radioogle.controllers', [])
     var result = getItems(parents, sorted_categories);
 
     $scope.menu = {
-      title: 'All Categories',
+      title: 'همه دسته ها',
       id: '0',
       items: result
     };
@@ -387,7 +387,7 @@ angular.module('radioogle.controllers', [])
 
   $scope.doRefresh = function() {
     $ionicLoading.show({
-      template: 'Loading posts...'
+      template: 'لطفا شکیبا باشید...'
     });
 
     //Always bring me the latest posts => page=1
@@ -425,7 +425,7 @@ angular.module('radioogle.controllers', [])
   };
 
   $scope.bookmarkPost = function(post){
-    $ionicLoading.show({ template: 'Post Saved!', noBackdrop: true, duration: 1000 });
+    $ionicLoading.show({ template: 'مطلب به علاقه مندی ها اضافه شد', noBackdrop: true, duration: 1000 });
     PostService.bookmarkPost(post);
   };
 
@@ -451,7 +451,7 @@ angular.module('radioogle.controllers', [])
   $ionicLoading.hide();
 
   $scope.sharePost = function(link){
-    window.plugins.socialsharing.share('Check this post here: ', null, null, link);
+    window.plugins.socialsharing.share('مطلب را اینجا پیدا کنید..', null, null, link);
   };
 
   $scope.addComment = function(){
@@ -497,7 +497,7 @@ angular.module('radioogle.controllers', [])
 
   $scope.doRefresh = function() {
     $ionicLoading.show({
-      template: 'Loading posts...'
+      template: 'لطفا شکیبا باشید...'
     });
 
     PostService.getPostsFromCategory($scope.category.id, 1)
@@ -533,7 +533,7 @@ angular.module('radioogle.controllers', [])
   };
 
   $scope.bookmarkPost = function(post){
-    $ionicLoading.show({ template: 'Post Saved!', noBackdrop: true, duration: 1000 });
+    $ionicLoading.show({ template: 'مطلب به علاقه مندی ها اضافه شد', noBackdrop: true, duration: 1000 });
     PostService.bookmarkPost(post);
   };
 
