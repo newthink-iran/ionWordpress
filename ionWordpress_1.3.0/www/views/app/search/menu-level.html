@@ -2,12 +2,12 @@
 	<div class="menu-heading" ng-class="{'has-previous': level > 0}">
 		<a class="menu-title" ng-if="level > 0" menu-close ui-sref="app.category({categoryTitle: menu.title, categoryId: menu.id})">
 			<h2 class="title-text">{{menu.title}}</h2>
-			<span class="title-aux">see all</span>
+			<span class="title-aux">نمایش همه</span>
 		</a>
 		<a class="menu-title" ng-if="level == 0" href="">
 			<h2 class="title-text">{{menu.title}}</h2>
 		</a>
-		<a ng-if="level > 0" class="menu-back icon ion-chevron-left" ng-click="backToPreviousMenu(menu, $event)" href="#">back</a>
+		<a ng-if="level > 0" class="menu-back icon ion-chevron-left" ng-click="backToPreviousMenu(menu, $event)" href="#">بازگشت</a>
 	</div>
 	<ul class="categories-list">
 		<li ng-repeat="item in menu.items" class="category-item-container icon" ng-class="{'ion-chevron-right': item.menu}">
