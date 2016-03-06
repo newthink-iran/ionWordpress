@@ -138,7 +138,7 @@ angular.module('your_app_name', [
     url: "/home",
     views: {
       'menuContent': {
-        templateUrl: "views/app/home.html",
+        templateUrl: "views/app/search/wp-search.html",
         controller: 'HomeCtrl'
       }
     },
