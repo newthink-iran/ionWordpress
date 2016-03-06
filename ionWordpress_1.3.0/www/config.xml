@@ -68,8 +68,8 @@
   <gap:plugin name="org.apache.cordova.dialogs"  />
   <gap:plugin name="org.apache.cordova.inappbrowser"/>
   <plugin name="cordova-plugin-console"/>
+  <plugin name="cordova-plugin-globalization"/>
   <plugin name="com.rjfun.cordova.iad"/>
-  <plugin name="cordova-plugin-admobpro"/>
   <!--
   <plugin name="cordova-plugin-console" spec="^1.0.1"/>
   <plugin name="cordova-plugin-globalization" spec="^1.0.1"/>
