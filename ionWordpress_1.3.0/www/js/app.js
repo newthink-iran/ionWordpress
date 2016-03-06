@@ -138,7 +138,7 @@ angular.module('radioogle', [
     url: "/home",
     views: {
       'menuContent': {
-        templateUrl: "views/app/search/wp-search.html",
+        templateUrl: "views/app/home.html",
         controller: 'HomeCtrl'
       }
     },
