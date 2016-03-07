@@ -3,15 +3,16 @@
   <!--<h2>Posted <span am-time-ago="post.date"></span> by <span class="author" ng-bind-html="post.author.name | rawHtml"></span></h2>-->
 </div>
 <div class="card-content-outer" post-content>
+  <img ng-src="{{post.attachments[0].url}}" />
   <div class="card-content" dynamic-anchor-fix ng-bind-html="post.content | rawHtml"></div>
 </div>
-<div class="card-footer">
+<div class="card-footer" style="direction:rtl;">
   <a class="card-button secondary" ng-click="sharePost(post.url)">اشتراک گذاری</a>
   <a class="card-button primary" ui-sref="app.post({postId :post.id})">بیشتر...</a>
   <!--<a ng-show="post.comment_count > 0" class="card-button comments" ui-sref="app.post({postId :post.id})">
     <i class="icon ion-chatbox"></i>{{post.comment_count}}
   </a>-->
-  <a class="card-button secondary bookmark" ng-click="bookmarkPost(post)">
-    <i class="icon ion-bookmark"></i>
+  <a ng-click="bookmarkPost(post)" style="float:left;">
+  <i class="icon ion-bookmark card-button secondary bookmark"></i>&nbsp;&nbsp; افزودن به علاقه مندی ها
   </a>
 </div>

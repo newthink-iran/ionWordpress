@@ -1,13 +1,15 @@
 <ion-view class="bookmarks-view">
   <ion-nav-title>
-    <span>علاقه مندی ها</span>
+    <span>علاقه مندی های من</span>
   </ion-nav-title>
   <ion-content>
     <div class="row bookmarks-container">
       <div ng-if="bookmarks.length == 0" class="col col-center">
         <div class="empty-results">
           <i class="icon ion-bookmark"></i>
-          <h3 class="no-bookmarks">چیزی یافت نشد</h3>
+          <h3 class="no-bookmarks">لیست علاقه مندی شما خالی است</h3>
+		  <h3 class="no-bookmarks">برای جستجو گزینه ذره بین در سمت راست بالای برنامه را کلیک کنید</h3>
+		  <h3 class="no-bookmarks">جهت مطالعه تازه ترین مطالب، گزینه سمت چپ بالای برنامه را کلیک کنید</h3>
         </div>
       </div>
       <div ng-if="bookmarks.length > 0" class="col">
@@ -17,7 +19,10 @@
               <h2 class="post-title" ng-bind-html="bookmark.title | rawHtml"></h2>
               <!--<p class="post-date">Posted <span class="post-time" am-time-ago="bookmark.date"></span></p>-->
             </a>
-            <ion-option-button class="remove-button" ng-click="remove(bookmark.id)">حذف از علاقه مندی</ion-option-button>
+			 <a ng-click="remove(bookmark.id)" style="float:right;">
+				حذف از علاقه مندی ها &nbsp;&nbsp;<i class="icon ion-bookmark card-button secondary bookmark"></i>
+			 </a>
+            <!--<ion-button class="remove-button" ng-click="remove(bookmark.id)">Remove</ion-button>-->
           </ion-item>
         </ion-list>
       </div>

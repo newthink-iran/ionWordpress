@@ -35,7 +35,7 @@ angular.module('radioogle', [
         //update user avatar and go on
         AuthService.updateUserAvatar();
 
-        $state.go('app.home');
+        $state.go('app.bookmarks');
       }
       else
       {
@@ -187,7 +187,7 @@ angular.module('radioogle', [
     resolve: {
       post_data: function(PostService, $ionicLoading, $stateParams) {
         $ionicLoading.show({
-      		template: 'Loading post ...'
+      		template: 'لطفا شکیبا باشید'
       	});
 
         var postId = $stateParams.postId;
@@ -244,7 +244,7 @@ angular.module('radioogle', [
 
 ;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/home');
+  $urlRouterProvider.otherwise('/app/bookmarks');
 })
 
 ;
